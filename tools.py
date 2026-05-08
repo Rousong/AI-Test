@@ -36,7 +36,7 @@ def get_weather(location: str) -> dict[str, object]:
     }
     weather = preset_weather.get(
         normalized_location,
-        {"condition": "clear", "temperature_celsius": 21},
+        {"condition": "clear", "temperature_celsius": 10},
     )
     return {
         "location": location,
