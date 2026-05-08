@@ -52,5 +52,28 @@ Returns:
 ## AI 动态维护区
 
 <!-- AI-DYNAMIC-SECTION:START -->
-此区块预留给 AI 根据具体项目补充项目概述和结构树。追加内容时只修改本区块，不要改动上方通用 Python 规则。
+## 项目概述
+
+该项目是一个最小化的 OpenAI Agent 命令行示例，核心功能包括：
+
+- 使用 OpenAI 官方 Python SDK 调用 `Responses API`
+- 提供 3 个本地 function calling 示例工具
+- 演示工具调用回路与最终文本答复输出
+- 提供无需真实 API Key 的本地自检和最小测试
+
+## 目录结构
+
+```text
+AI-Test/ # 项目根目录，存放 demo 代码、说明文档和虚拟环境配置。
+├── .git/ # Git 仓库元数据目录。
+├── .gitignore # 忽略虚拟环境、缓存和 macOS 生成文件。
+├── .venv/ # 当前项目专用的 Python 虚拟环境。
+├── AGENTS.md # 项目级规则、代码概述和目录结构说明。
+├── README.md # 说明 demo 的用途、运行方式和 API Key 配置方式。
+├── docs/ # 存放设计文档、实施计划及其目录级说明。
+├── main.py # 命令行入口，负责自检和 Responses API 的 function calling 回路。
+├── requirements.txt # 与当前 `.venv` 安装状态同步的依赖声明。
+├── test_demo.py # 验证工具定义、自检逻辑和基础行为的最小测试。
+└── tools.py # 定义本地工具函数、工具 schema 和工具分发逻辑。
+```
 <!-- AI-DYNAMIC-SECTION:END -->
