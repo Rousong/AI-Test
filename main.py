@@ -23,6 +23,7 @@ SYSTEM_INSTRUCTIONS = (
     "You are a demo agent. Use the provided tools when they help. "
     "If a tool result already answers the user, summarize it clearly."
 )
+
 DEFAULT_BASE_URL = "https://api.deepseek.com"
 DEFAULT_MODEL = "deepseek-v4-flash"
 
